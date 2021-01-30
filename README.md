@@ -1,6 +1,41 @@
 Yoti SDK Back-end test
 ======================
 
+## Running the Project:
+
+```javascript
+java -jar ~/yoti-sdk-backend-test/yoti-sdk-backend-test.jar
+```
+or
+```javascript
+mvn clean install spring-boot:run
+```
+
+## EndPoints
+http://localhost:8080/hoover POST.
+
+## Database GUI
+ The database information can be reached at http://localhost:8080/h2 Use the following credentials when prompted:
+ 
+```javascript
+Driver class: org.h2.Driver 
+JDBC url: jdbc:h2:file:~/embedded_db
+User name: sa
+Password:  
+```
+
+## Assumptions
+1.lower case  letters are equivalent to uppercase (nnse is equal to NNSE)
+2.if the hoover is running into a wall, the program will not crash, the last 'Good' position will be saved
+3. 400 HTTP status is returned with a similar body depending on what went wrong:
+
+```javascript
+{
+  "error_code" : "FORMAT_NOT_VALID",
+  "error_message" : "The string can only contain the following characters: N,S,W,E."
+}
+```
+
 ## Introduction
 You will write a service that navigates a imaginary robotic hoover (much like a Roomba) through an equally imaginary room based on:
 
