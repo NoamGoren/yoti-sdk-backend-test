@@ -57,7 +57,7 @@ Password:
 }
 ```
 
-## Assumptions
+## Testing
  - There are 28 unit and integration tests. you can run it using the command:
 ```
 mvn clean test
