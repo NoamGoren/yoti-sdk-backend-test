@@ -2,16 +2,18 @@ Yoti SDK Back-end test
 ======================
 
 ## Running the Project:
-1) Clone the project to your local directory:
+- Clone the project to your local directory:
 ```javascript
 git clone https://github.com/NoamGoren/yoti-sdk-backend-test.git
 ```
-2) Run the predefined jar
+Run the project in 2 ways:
+
+1) Run the predefined jar
 ```javascript
 java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
 ```
-or.
-3) cd into the cloned project and 
+
+2) cd into the cloned project and run the following command
 ```javascript
 mvn clean install spring-boot:run
 ```
