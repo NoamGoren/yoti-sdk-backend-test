@@ -8,12 +8,10 @@ git clone https://github.com/NoamGoren/yoti-sdk-backend-test.git
 ```
 Run the project in one of the 2 ways:
 
-1) Run the predefined jar
 ```javascript
 java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
 ```
 
-2) cd into the cloned project and run the following command
 ```javascript
 mvn clean install spring-boot:run
 ```
