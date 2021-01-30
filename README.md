@@ -6,12 +6,12 @@ Yoti SDK Back-end test
 ```javascript
 git clone https://github.com/NoamGoren/yoti-sdk-backend-test.git
 ```
-2.1) Run the predefined jar
+2) Run the predefined jar
 ```javascript
 java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
 ```
 or.
-2.2) cd into the cloned project and 
+3) cd into the cloned project and 
 ```javascript
 mvn clean install spring-boot:run
 ```
