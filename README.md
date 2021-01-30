@@ -6,7 +6,7 @@ Yoti SDK Back-end test
 ```javascript
 git clone https://github.com/NoamGoren/yoti-sdk-backend-test.git
 ```
-Run the project in 2 ways:
+Run the project in one of the 2 ways:
 
 1) Run the predefined jar
 ```javascript
