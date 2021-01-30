@@ -27,7 +27,7 @@ Password:
 ## Assumptions
 1) Lower cased letters are equivalent to uppercase (nnse is equal to NNSE).
 2) If the hoover is running into a wall, the program will not crash, the last 'Good' position will be saved.
-3) 400 HTTP status is returned for format or illigeal input errors:
+3) 400 HTTP status is returned for format or illegal input errors:
 
 ```javascript
 {
