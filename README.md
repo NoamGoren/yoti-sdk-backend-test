@@ -4,7 +4,7 @@ Yoti SDK Back-end test
 ## Running the Project:
 
 ```javascript
-java -jar ~/yoti-sdk-backend-test/yoti-sdk-backend-test.jar
+java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
 ```
 or
 ```javascript
