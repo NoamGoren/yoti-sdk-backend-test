@@ -57,6 +57,12 @@ Password:
 }
 ```
 
+## Assumptions
+ - There are 28 unit and integration tests. you can run it using the command:
+```
+mvn clean test
+```
+
 ## Introduction
 You will write a service that navigates a imaginary robotic hoover (much like a Roomba) through an equally imaginary room based on:
 
