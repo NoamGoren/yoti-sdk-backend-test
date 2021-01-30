@@ -2,20 +2,16 @@ Yoti SDK Back-end test
 ======================
 
 ## Running the Project:
-- Clone the project to your local directory:
+1) Clone the project to your local directory:
 ```javascript
 git clone https://github.com/NoamGoren/yoti-sdk-backend-test.git
 ```
-- Run the project in one of the 2 ways:
-
-```javascript
-java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
-```
+2) cd to the cloned project and run the following:
 
 ```javascript
 mvn clean install spring-boot:run
 ```
-- Use the main endpoint http://localhost:8080/hoover for ```POST``` requests with body for example:
+3) Use the main endpoint http://localhost:8080/hoover for ```POST``` requests with body for example:
 
 ```javascript
 {
