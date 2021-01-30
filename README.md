@@ -6,7 +6,7 @@ Yoti SDK Back-end test
 ```javascript
 git clone https://github.com/NoamGoren/yoti-sdk-backend-test.git
 ```
-Run the project in one of the 2 ways:
+- Run the project in one of the 2 ways:
 
 ```javascript
 java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
@@ -14,6 +14,20 @@ java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
 
 ```javascript
 mvn clean install spring-boot:run
+```
+- use the main endpoint http://localhost:8080/hoover for Post request with body for example:
+
+```javascript
+{
+  "roomSize" : [5, 5],
+  "coords" : [1, 2],
+  "patches" : [
+    [1, 0],
+    [2, 2],
+    [2, 3]
+  ],
+  "instructions" : "NNESEESWNWW"
+}
 ```
 
 ## EndPoints
