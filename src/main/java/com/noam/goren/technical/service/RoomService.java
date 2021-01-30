@@ -1,5 +1,6 @@
 package com.noam.goren.technical.service;
 
+import com.noam.goren.technical.model.Hoover;
 import com.noam.goren.technical.model.Point;
 import com.noam.goren.technical.model.Room;
 import com.noam.goren.technical.repository.RoomRepository;
@@ -26,6 +27,17 @@ public class RoomService {
         this.hooverService = hooverService;
         this.pointService = pointService;
     }
+
+    public void handleRoomService(Room room) {
+        final List<Point> patches = room.getDirtPatchesList();
+        final Hoover hoover = room.getHoover();
+        final Point currentPosition = new Point(hoover.getStartPosition());
+        hooverService.checkIfPatch(patches, hoover,currentPosition);
+        hooverService.iterateHooverCommands(room, patches, hoover, currentPosition);
+        hoover.setEndPosition(currentPosition);
+        save(room);
+    }
+
 
     public Room save(final Room room) {
         if(room == null)
