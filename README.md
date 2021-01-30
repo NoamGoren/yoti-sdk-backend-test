@@ -11,10 +11,14 @@ or
 mvn clean install spring-boot:run
 ```
 
+## Technologies
+1) Spring Boot - Used to deliver ready-to-run applications that don't require any configuration on your side.
+2) H2 - H2 can be an in-memory database and it has been choosed because it's easier to implement and can easily be replaced with any implementation. it is automatically configured on startup based on the @Entity classes inside the project. Due to its nature, the database structure and data are lost when the server is stopped.
+
 ## EndPoints
 http://localhost:8080/hoover POST.
 
-## Database GUI
+## Database
  The database information can be reached at http://localhost:8080/h2 Use the following credentials when prompted:
  
 ```javascript
