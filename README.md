@@ -15,7 +15,7 @@ java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
 ```javascript
 mvn clean install spring-boot:run
 ```
-- Use the main endpoint http://localhost:8080/hoover for Post request with body for example:
+- Use the main endpoint http://localhost:8080/hoover for Post requests with body for example:
 
 ```javascript
 {
