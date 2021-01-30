@@ -2,21 +2,42 @@ Yoti SDK Back-end test
 ======================
 
 ## Running the Project:
+- Clone the project to your local directory:
+```javascript
+git clone https://github.com/NoamGoren/yoti-sdk-backend-test.git
+```
+- Run the project in one of the 2 ways:
 
 ```javascript
 java -jar ~/yoti-sdk-backend-test/yoti-sdk.jar
 ```
-or
+
 ```javascript
 mvn clean install spring-boot:run
 ```
+- Use the main endpoint http://localhost:8080/hoover for ```POST``` requests with body for example:
+
+```javascript
+{
+  "roomSize" : [5, 5],
+  "coords" : [1, 2],
+  "patches" : [
+    [1, 0],
+    [2, 2],
+    [2, 3]
+  ],
+  "instructions" : "NNESEESWNWW"
+}
+```
+
+## EndPoints
+```POST``` - http://localhost:8080/hoover.
+
 
 ## Technologies
 1) Spring Boot - Used to deliver ready-to-run applications that don't require any configuration on your side.
 2) H2 - H2 can be an in-memory database and it has been choosed because it's easier to implement and can easily be replaced with any implementation. it is automatically configured on startup based on the @Entity classes inside the project. Due to its nature, the database structure and data are lost when the server is stopped.
 
-## EndPoints
-http://localhost:8080/hoover POST.
 
 ## Database
  The database information can be reached at http://localhost:8080/h2 Use the following credentials when prompted:
