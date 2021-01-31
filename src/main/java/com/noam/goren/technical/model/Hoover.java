@@ -33,14 +33,6 @@ public class Hoover {
         this.instructions = instructions;
         this.cleanedPatchesCount = 0;
     }
-    public long getId() {
-        return id;
-    }
-
-    public void setId(final long id) {
-        this.id = id;
-    }
-
     public Point getStartPosition() {
         return startPoint;
     }
@@ -59,10 +51,6 @@ public class Hoover {
 
     public String getInstructions() {
         return instructions;
-    }
-
-    public void setInstructions(final String instructions) {
-        this.instructions = instructions;
     }
 
     public int getCleanedPatchesCount() {

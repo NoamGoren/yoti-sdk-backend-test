@@ -39,7 +39,7 @@ public class RoomService {
     }
 
 
-    public Room save(final Room room) {
+    public void save(final Room room) {
         if(room == null)
             throw new NullPointerException();
         if(room.getHoover() == null)
@@ -51,7 +51,7 @@ public class RoomService {
             cachedPatches.add(pointService.getCoordinate(point.getX(), point.getY(), true));
         }
         room.setDirtPatchesList(cachedPatches);
-        return roomRepository.save(room);
+        roomRepository.save(room);
     }
 
 }

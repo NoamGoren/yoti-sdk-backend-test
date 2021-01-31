@@ -7,7 +7,7 @@ public enum HooverError {
     INVALID_PATCH_POSITION("The position of Patch is invalid"),
     INVALID_INSTRUCTION("The string can only contain the following characters: N,S,W,E.");
 
-    private String message;
+    private final String message;
 
     HooverError(final String message) {
         this.message = message;

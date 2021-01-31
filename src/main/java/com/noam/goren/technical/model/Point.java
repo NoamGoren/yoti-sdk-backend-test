@@ -28,13 +28,6 @@ public class Point {
         this(x, y, false);
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(final long id) {
-        this.id = id;
-    }
 
     public int getX() {
         return x;
@@ -54,10 +47,6 @@ public class Point {
 
     public boolean isDirtPatch() {
         return isDirtPatch;
-    }
-
-    public void setDirtPatch(final boolean isDirtPatch) {
-        this.isDirtPatch = isDirtPatch;
     }
 
     @Override

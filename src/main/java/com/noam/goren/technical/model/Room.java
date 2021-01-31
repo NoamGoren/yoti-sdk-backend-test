@@ -36,28 +36,12 @@ public class Room {
         this.hoover = hoover;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(final long id) {
-        this.id = id;
-    }
-
     public int getWidth() {
         return width;
     }
 
-    public void setWidth(final int width) {
-        this.width = width;
-    }
-
     public int getHeight() {
         return height;
-    }
-
-    public void setHeight(final int height) {
-        this.height = height;
     }
 
     public List<Point> getDirtPatchesList() {
@@ -72,7 +56,4 @@ public class Room {
         return hoover;
     }
 
-    public void setHoover(final Hoover hoover) {
-        this.hoover = hoover;
-    }
 }
